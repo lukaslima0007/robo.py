@@ -1,6 +1,5 @@
 # NÃO ADIANTA PEGAR O CÓDIGO E QUERER RODAR SEM MUDAR AS COORDENAS!
 # CADA JANELA TEM POSIÇÕES(COORDENADAS DIFERENTES)
-# SENDO ASSIM, ASSISTA O VIDEO INTEIRO PARA ENTENDER COMO MONTAR ESTE PROGRAMA
 
 import openpyxl
 import pyperclip
@@ -8,7 +7,7 @@ import pyautogui
 from time import sleep
 
 # Entrar na planilha
-workbook = openpyxl.load_workbook('produtos_ficticios.xlsx')
+workbook = openpyxl.load_workbook('nome do arquivo.xlsx')
 sheet_produtos = workbook['Produtos']
 # Copiar informação de um campo e colar no seu campo correspondente
 for linha in sheet_produtos.iter_rows(min_row=2):
